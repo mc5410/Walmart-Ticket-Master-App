@@ -118,7 +118,9 @@ This REST API service was built to implement a simple ticket service that facili
             "emailAddress": "mc5410@nyu.edu"
         }  
         
-3. Reserve a specfic held seat by provding the dbId and customer email address.
+### 3. Reserve the held seats.
+
+1. Reserve the specific seats held by customer by providing the seatHoldId and the email address used to hold the seats.
 
     URL 
           
@@ -142,3 +144,12 @@ This REST API service was built to implement a simple ticket service that facili
               }
 
 # Assumptions
+
+1. The seats held by user expires in 60 seconds, so the user should reserve the held seat in 60 seconds.
+2. A user can hold and reserve seats multiple times using same email Id, 1.e. one user can have many transactions.
+3. Any level other than 1,2,3,4 if provided throws level not found exception.
+4. If the user doesn't mention the min level and max level the best level to start booking is level 1.
+5. 0 is provided in the place of {level} just to return the total number of seats available in the venue irrespective of the venue.
+6. The id which is generated after booking of certain seats is the booking confirmation code.
+7. Assumed that the user doesn't need to update the reserved seats or delete the reserved seats.
+8. Assumed that the users know the level id which corresponds to each level in the venue.
