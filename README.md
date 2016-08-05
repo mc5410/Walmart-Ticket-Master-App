@@ -4,7 +4,7 @@ By Manish Reddy , email id : mc5410@nyu.edu
 
 This REST API service was built to implement a simple ticket service that facilitates the discovery, temporary hold, and final reservation of seats within a high-demand performance venue.
 
-  * Implemented the project using Maven latest version (3.3.9), SpringBoot, HSQLDB(Hyper SQL) for In-Memory Database.
+  * Implemented the project using Maven latest version (3.3.9), SpringBoot, HSQLDB(Hyper SQL) for In-Memory Database and Hibernate ORM for mapping the object to the database.
   * This project has only annotation based configurations which is better, cleaner and easier than XML based configs.
   * The user can send a request by http URL to interact with the system. The system return JSON formatted response.
   * The user can also send a request by curl commands to interact with the service.
