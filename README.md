@@ -14,14 +14,14 @@ This REST API service was built to implement a simple ticket service that facili
 
 ## 1. Building the project using Maven
 
-     1. Firstly, Download this project to the desktop or otherwise it can be cloned in the GitHub Desktop.
-     2. Unzip the file to a location if the file is downloaded.
-     3. Now, open the terminal and change the directory to the directory of the project where pom.xml file is present.
-     4. This project already consists built jar file in target folder but if needed to build, use the following command to build the project.
+1. Firstly, Download this project to the desktop or otherwise it can be cloned in the GitHub Desktop.
+2. Unzip the file to a location if the file is downloaded.
+3. Now, open the terminal and change the directory to the directory of the project where pom.xml file is present.
+4. This project already consists built jar file in target folder but if needed to build, use the following command to build the project.
         
          ``` mvn clean install ```
         
-      5. The test cases designed to test the project also run after the above command. If only test cases need to be run, the following command can be used to acheive it.
+5. The test cases designed to test the project also run after the above command. If only test cases need to be run, the following command can be used to acheive it.
       
             ``` mvn test ```
             
