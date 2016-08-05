@@ -1,5 +1,7 @@
 # Walmart-Ticket-Master-App
 
+By Manish Reddy , email id : mc5410@nyu.edu
+
 This REST API service was built to implement a simple ticket service that facilitates the discovery, temporary hold, and final reservation of seats within a high-demand performance venue.
 
   * Implemented the project using Maven latest version (3.3.9), SpringBoot, HSQLDB(Hyper SQL) for In-Memory Database.
@@ -149,6 +151,7 @@ This REST API service was built to implement a simple ticket service that facili
 
 1. The seats held by user expires in 60 seconds, so the user should reserve the held seat in 60 seconds.
 2. A user can hold and reserve seats multiple times using same email Id, 1.e. one user can have many transactions.
+3. A user doesn't need to be present in the system to hold or book tickets.
 3. Any level other than 1,2,3,4 if provided throws level not found exception.
 4. If the user doesn't mention the min level and max level the best level to start booking is level 1.
 5. 0 is provided in the place of {level} just to return the total number of seats available in the venue irrespective of the level.
