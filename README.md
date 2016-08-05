@@ -1,11 +1,13 @@
 # Walmart-Ticket-Master-App
 
-This REST API service was built to implement a simple ticket service that facilitates the discovery, temporary hold, and final reservation of seats within a high-demand performance  venue.
+This REST API service was built to implement a simple ticket service that facilitates the discovery, temporary hold, and final reservation of seats within a high-demand performance venue.
 
   * Implemented the project using Maven latest version (3.3.9), SpringBoot, HSQLDB(Hyper SQL) for In-Memory Database.
+  * This project has only annotation based configurations which is better, cleaner and easier than XML based configs.
   * The user can send a request by http URL to interact with the system. The system return JSON formatted response.
   * The user can also send a request by curl commands to interact with the service.
   * You need JDK 1.8 and Maven 3.3.* instlled and configured to your system.
+  * Used Mockito from spring boot test for Unit Testing of repository layer.
   * The user can interact with the service by using POSTMAN application to POST the Body in JSON format and GET in JSON format.
   * This service allows a customer to know number of available seats in the venue optionally by levels.
   * This service allows a customer to hold a number of seats in the venue optionally by min level and max level.
@@ -149,7 +151,7 @@ This REST API service was built to implement a simple ticket service that facili
 2. A user can hold and reserve seats multiple times using same email Id, 1.e. one user can have many transactions.
 3. Any level other than 1,2,3,4 if provided throws level not found exception.
 4. If the user doesn't mention the min level and max level the best level to start booking is level 1.
-5. 0 is provided in the place of {level} just to return the total number of seats available in the venue irrespective of the venue.
+5. 0 is provided in the place of {level} just to return the total number of seats available in the venue irrespective of the level.
 6. The id which is generated after booking of certain seats is the booking confirmation code.
 7. Assumed that the user doesn't need to update the reserved seats or delete the reserved seats.
 8. Assumed that the users know the level id which corresponds to each level in the venue.
