@@ -1,0 +1,5 @@
+com/walmart/ticket_master/repository/TicketRepositoryTest.class
+com/walmart/ticket_master/service/NumSeatsAvailableTest.class
+com/walmart/ticket_master/service/HoldSeatsServiceTest.class
+com/walmart/ticket_master/TestConfig.class
+com/walmart/ticket_master/service/ReserveSeatsServiceTest.class
